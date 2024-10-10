@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo sobre cônicas</title>
+    <link rel="stylesheet" href="conicas.css">
+</head>
+<body>
+    <header>
+        <h1>Cônicas: elipse, hipérbole e parábola</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Aviso</h2>
+            <p>Todo conteúdo deste artigo foi retirado de um livro escolar, além da maioria das imagens. Não tenho nenhuma intenção de lucrar, direta ou
+                indiretamente, com este artigo, isto é apenas um trabalho acadêmico. Deixarei as referências bibliográficas no rodapé para creditar o autor
+                do livro. Também vou deixar alguns vídeos do YouTube hospedados aqui, pois acho que um vídeo explicando é sempre uma boa opção de estudo. 
+                As referências bibliográficas seguem as normas da ABNT.</p>
+        </section>
+        <section>
+            <h2>1-O que é uma figura cônica?</h2>
+            <p>Como o nome sugere, uma figura cônica é obtida a partir de um cone. É uma figura geométrica plana que resulta da intersecção de um cone 
+                duplo de revolução com um plano. Para definir esse tipo de figura, vamos considerar duas retas r e e concorrentes no ponto V. A
+                superfície S obtida pela rotação de 360° de r em torno de e é chamada de superfície cônica circular reta de duas folhas, com vértice V,
+                eixo de rotação s e geratrizes ilimitadas.</p>
+            <div><img src="teste.jpg" alt="Cone" loading="lazy"> </div>
+            <p>A intersecção de um plano a qualquer com a superfície S é chamada de figura cônica. Essa figura pode ser um ponto, uma reta, um par de 
+                retas, uma circunferência, uma elipse, uma hipérbole ou uma parábola.</p>
+            <div> <img src="cone1.jpg" alt="Três outros cones" loading="lazy"></div>
+        </section>
+        <section>
+            <h2 class="sublinhado">Visualizando cônicas</h2>
+            <ul>Ao iluminar uma parede plana com o facho cônico de luz proveniente de uma lanterna, podemos visualizar as figuras apresentadas na página.
+                Acompanhe:
+                <li>Se o eixo do cone de luz é oblíquo ao plano da parede, de modo que todas as geratrizes do cone sejam interceptadas pelo plano, então 
+                    a intersecção desse plano com a superfície do cone é uma elipse.</li>
+            </ul>
+                    <div><img src="elipse.jpg" alt="Elipse" loading="lazy"></div>
+            <ul>
+                <li>Se o eixo do cone de luz é paralelo ao plano da parede, então a intersecção desse plano com a superfície do cone é um dos ramos de uma
+                    hipérbole (a hipérbole é formada por dois ramos como esse).</li>
+            </ul>
+                    <div><img src="hiperbole.jpg" alt="Hipérbole" loading="lazy"></div>
+            <ul>
+                <li>Se uma das geratrizes do cone de luz é paralela ao plano da parede, então a intersecção desse plano com a superfície do cone é uma
+                    parábola.</li>
+            </ul>
+                    <div><img src="parabola.jpg" alt="Parábola" loading="lazy"></div>
+        </section>
+        <section>
+            <h2 class="sublinhado">Da origem das cônicas às suas aplicações atuais</h2>
+            <p>O  mais completo tratado sobre as cônicas foi escrito pelo matemático e astrônomo grego Apolônio de Perga, por volta de 225 a.C., embora elas
+                já tivessem sido estudadas antes dele.</p>
+            <p>Os termos <em>elipse</em>, <em>parábola</em> e <em>hipérbole</em> foram empregados por Apolônio por significarem, respectivamente, falta, igualdade e 
+            excesso. Essas classificações referem-se a um número, chamado <b>excentricidade</b> da cônica, que é menor que 1 na elipse (falta), igual a 1 na parábola
+            (igualdade) e maior que 1 na hipérbole (excesso).</p>
+            <p>A obra "As cônicas", de Apolônio, foi duramente criticada por alguns sábios de sua época, que encaravam esse estudo como puro deleite do autor,
+                sem nenhuma utilidade para o mundo real.
+                O tempo se sucumbiu mostrar a esses sábios que os planetas descrevem órbitas elípticas em torno do Sol; em 1632, Galileu Galilei descreveu como
+                parabólica a trajetória de projetéis lançados obliquamente para cima; em 1662, Robert Boyle, considerado um dos fundadores da Química, descobriu 
+                que, sob  temperatura constante, a função que expressa a relação entre o volume de uma massa fixa de gás e a pressão exercida sobre ela é hiperbólica. 
+                Constatamos, ainda, a presença das cônicas em muitas outras situações do mundo real, como na construção de antenas, espelhos e lentes parabólicos ou 
+                hiperbólicos; nas trajetórias elípticas, parabólicas ou hiperbólicas de astros celestes; em Economia, no estudo da curva parabólica de possibilidades 
+                de produção etc. Nos exemplos a seguir, o Coliseu, em Roma, tem forma elíptica; os pilares da Catedral de Brasília, em DF, têm forma de um hiperboloide; o 
+                projétil do canhão descreve um trajeto parabólico.</p>
+        <div>
+            <img src="_e6c95056-545e-4e2e-9e00-c7b6349e6831.jpg" alt="Coliseu" loading="lazy">
+            <img src="_9fbca329-81bd-4d90-b3bf-8204d41a2c64.jpg" alt="Catedral" loading="lazy">
+            <img src="tiro.jpg" alt="Tiro de canhão (parábola)" loading="lazy">
+        </div>
+        </section>
+        <section>
+            <h2>2-Elipse</h2>
+            <p>Definimos elipse como intersecção de um plano com a superfície de um cone; porém, para um estudo analítico dessa cônica, convém defini-la a partir
+                da propriedade comum a todos os seus pontos, enunciada a seguir.</p>
+            <p>Fixando dois pontos, F<sub>1</sub> e F<sub>2</sub>, de um plano alfa, tais que F<sub>1</sub>F<sub>2</sub> = 2c, com c > 0, chama-se elipse o conjunto dos pontos P do plano alfa cuja soma das
+                distâncias PF<sub>1</sub> e PF<sub>2</sub> é uma constante 2a, com 2a > 2c. PF<sub>1</sub> + PF<sub>2</sub> = 2a</p>
+            <div><img src="IMG_20241002_104531598.jpg" alt="Triângulo inscrito numa elipse" loading="lazy"></div>
+            <ul>
+                <li>Os pontos F<sub>1</sub>e F<sub>2</sub> são os <b>focos</b> da elipse.</li>
+                <li>A medida 2c é a <b>distância focal</b> (distância entre focos); c é a semidistância focal.</li>
+                <li>Qualquer segmento de reta cujos extremos são pontos da elipse é chamado de <b>corda</b> da elipse.</li>
+                <li>A corda <em class="linha-acima">A<sub>1</sub>A <sub>2</sub></em>, que passa pelos focos F<sub>1</sub> e F<sub>2</sub>, é chamada de <b>eixo maior</b> da elipse, e sua medida é 2a.</li>
+                <li>O ponto médio C do eixo maior <em class="linha-acima">A<sub>1</sub>A<sub>2</sub></em>, que também é o ponto médio do segmento <em class="linha-acima">F<sub>1</sub>F<sub>2</sub></em>, é
+                chamado de <b>centro</b> da elipse; <em class="linha-acima">A<sub>1</sub>C</em> e <em class="linha-acima">A<sub>2</sub>C</em> são semieixos maiores, de medida a.</li>
+                <li>A corda <em class="linha-acima">B<sub>1</sub>B<sub>2</sub></em>, que passa por C e é perpendicular ao eixo maior, é o eixo menor da elipse; os segmentos <em class="linha-acima">
+                B<sub>1</sub>C</em> e <em class="linha-acima">B<sub>2</sub>C</em> são os <b>semieixos</b>. Esses semieixos têm medidas iguais, que serão indicadas por b, isto é, B<sub>1</sub>C = B<sub>2</sub>C = b.</li>
+            </ul>
+                <div><img src="IMG_20241002_104804051.jpg" alt="Triângulo inscrito numa elipse alinhado ao centro" loading="lazy"></div>
+            <ul>
+                <li>Pelo teorema de pitágoras, temos do trinângulo B<sub>1</sub>CF<sub>2</sub>: a² = b² + c²</li>
+                <li>O número e = c / a é chamado de excentricidade da elipse. Observando que esse número é o cosseno do ângulo agudo B<sub>1</sub>F<sub>2</sub>C, temos 0 < e < 1.</li>
+            </ul>
+            <h3 style="text-indent: 32px;" class="N/A"><b>Nota:</b></h3>
+            <p>A excentricidade é um número que mostra quanto a elipse é achatada. Fixada a medida 2b do eixo menor, quanto mais próximos estiverem os focos, mais
+                próximos de uma circunferência estarão os pontos da elipse; e, quanto mais distantes estiverem os focos, mais achatada será a elipse. Observe:</p>
+            <div><img src="IMG_20241002_104849276.jpg" alt="Duas elipses, uma mais achatada que a outra" loading="lazy"></div>
+            <p>Assim, quanto mais próximo de zero estiver o número e = c / a, mais próximos de uma circunferência estarão os pontos da elipse; e, quanto mais próximo de 1 
+                estiver o número e, mais próximos de um segmento de reta estarão os pontos da elipse.</p>
+            <div class="vídeo">
+                <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/AQV5O0Go_YE?si=fZz-GINidm4lMZCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h2 class="sublinhado">Construção de uma elipse</h2>
+            <h3>Usando tábua, pregos, barbante e lápis</h3>
+            <p>Fixe dois pregos em dois pontos distintos de uma tábua e amarre neles as extremidades de um barbante de comprimento maior que a distância entre os pregos.
+                Em seguida, desenhe uma linha na tábua com um lápis apoiado no barbante, mantendo-o o mais esticado possível, conforme mostra a foto abaixo.</p>
+            <div>
+                <img src="IMG_20241002_104910444.jpg" alt="Construção de uma elipse" loading="lazy">
+            </div>
+            <p>A linha assim desenhada é uma elipse, pois a soma das distâncias de cada um dos seus pontos aos dois pregos é igual ao comprimento do barbante.</p>
+            <h3>Usando dobraduras</h3>
+            <p>As dobraduras proporcionam interessantes construções geométricas. Uma delas é o traçado de uma elipse. Para isso, adotamos os seguintes procedimentos:</p>
+            <ol type="I">
+                <p><li>Desenhamos em uma folha de papel translúcido (papel-mateiga, por exemplo, é uma boa escolha) um ponto interior a uma circunferência, distinto do centro.</li></p>
+                <p><li>Dobramos a folha em torno de uma corda da circunferência de modo que o arco dobrado passe pelo ponto.</li></p>
+                <p><li>Desdobramos a folha e fazemos outra dobra em torno de outra corda, de modo que o arco dobrado passe pelo ponto. Repetimos esse procedimento várias vezes.
+                    As retas que contêm essas cordas são tangentes a uma elipse; quanto mais dobras fizermos, mais visível ficará a elipse.</li></p>
+            </ol>
+            <div style="display: inline-block; max-width: 354px; margin-left: auto;"><img src="IMG_20241004_102125969.jpg" alt="elispe1" loading="lazy"></div>
+            <div style="display: inline-block; max-width: 354px; margin: auto;"><img src="IMG_20241004_102138054.jpg" alt="elipse2" loading="lazy"></div>
+            <div style="display: inline-block; max-width: 354px; margin-right: auto;"><img src="IMG_20241004_102214371.jpg" alt="elipse3" loading="lazy"></div>
+        </section>
+        <section>
+            <h2 class="sublinhado">Equação reduzida da elipse</h2>
+            <p>Associando um sistema de eixos cartesianos ao plano de uma elipse, podemos respresentá-la por uma equação. Como introdução, estudaremos apenas o caso em que os eixos
+                da elipse são, respectivamente, paralelos aos eixos coordenados do sistema cartesiano. Por exemplo, consideremos a elipse abaixo, de focos F<sub>1</sub>(-1, 0) e 
+            F<sub>2</sub>(1, 0), cujo eixo maior mede 4 unidades.</p>
+            <div><img src="IMG_20241002_105006444.jpg" alt="elipse4"></div>
+            <p>Obtemos uma equação  dessa elipse considerando um ponto genérico P(x ,y) e impondo que PF<sub>1</sub> + PF<sub>2</sub> = 4, ou seja:</p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">√<em class="linha-acima">(x - (-1))² + (y - 0)²</em> + √<em class="linha-acima">(x + 1)² + (y - 0)²</em> = 4 -> √<em class="linha-acima">(x + 1)² + y²</em> + √<em class="linha-acima">(x - 1)² + y²</em> = √<em class="linha-acima">(x + 1)² + y²</em> = 4 - √<em class="linha-acima">(x - 1)² + y²</em></p>
+            <p>Quadrando ambos os membros, temos:</p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">(√<em class="linha-acima">(x + 1)² + y²</em>)² = (4 - √<em class="linha-acima">(x - 1)² + y²</em>)² -> (x + 1)² + <em style="text-decoration: line-through;">y²</em> = 16 - 8√<em class="linha-acima">(x - 1)² + y²</em> + (x - 1)² + <em style="text-decoration: line-through;">y²</em> -></p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">-> <em style="text-decoration: line-through;">x²</em> + 2x + <em style="text-decoration: line-through;">1</em> = 16 - 8√<em class="linha-acima">(x - 1) + y²</em> + <em style="text-decoration: line-through;">x²</em> - 2x + <em style="text-decoration: line-through;">1</em> -> 8√<em class="linha-acima">(x - 1)² + y²</em> = 16 - 4x -> 2√<em>(x - 1)² + y²</em> = 4 - x</p>
+            <p>Quadrando ambos os membros, temos:</p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">(2√<em class="linha-acima">(x - 1)² + y²</em>)² = (4 - x)² -> 4[(x - 1)² + y²] = (4 - x)² -> 4(x² - 2x + 1 + y²) = 16 - 8x + x² -></p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">4x² - <em style="text-decoration: line-through;">8x</em> + 4 + 4y² - 16 + <em style="text-decoration: line-through;">8x</em> - x² = 0 -> 3x² + 4y² - 12 = 0 -> x²/4 + y²/3 = 1</p>
+            <p>Essa útilma equação é chamada de <b>equação reduzida da elipse.</b></p>
+            <h3>Generalizando</h3>
+            <ul>Reproduzindo os procedimentos apresentados nesse exemplo para uma elipse qualquer de centro C(x<sub>0</sub>, y<sub>0</sub>), com eixo maior de medida 2a e eixo menor de medida
+            2b, concluímos que:
+                <li>Se a elipse tem o eixo maior paralelo ao eixo das abscissas, sua equação pode ser apresentada sob a forma:</li>
+                <p style="font-family: Geneva, Tahoma, sans-serif; text-align: center;">(x - x<sub>0</sub>)² / a² + (y - y<sub>0</sub>)² / b² = 1</p>
+            </ul>
+                <div><img src="IMG_20241002_105108427~2.jpg" alt="elispe5" loading="lazy"></div>
+            <ul>
+                <li>Se a elipse tem o eixo maior paralelo ao eixo das ordenadas, sua equação pode ser apresentada sob a forma:</li>
+                <p style="font-family: Geneva, Tahoma, sans-serif; text-align: center;">(x - x<sub>0</sub>)² / b² + (y - y<sub>0</sub>) / a² = 1</p>
+            </ul>
+                <div><img src="IMG_20241002_105108427.jpg" alt="elispe6" loading="lazy"></div>
+            <p>Essas duas equações são denominadas <b>equações reduzidas das elipses.</b></p>
+        </section>
+        <section>
+            <h2>3-Hipérbole</h2>
+            <p>Por sua excepecional estabilidade, a forma do hiperboloide é usada na construção das torres de resfriamento de usinas nucleares. A superfície desse tipo de hiperboloide
+                é obtida pela rotação de uma hipérbole em torno de seu eixo imaginário.</p>
+            <p>Da mesma forma que na elipse, necessitamos de uma definição de hipérbole que nos permita um estudo analítico dessa cônica. Por isso, a seguir definimos hipérbole a
+                partir de uma propriedade comum a todos os seus pontos.</p>
+            <p>Fixados dois pontos F<sub>1</sub> e F<sub>2</sub> de um plano alfa, tais que F<sub>1</sub>F<sub>2</sub> = 2c, com c > 0, chama-se hipérbole o conjunto dos pontos P do 
+            plano alfa cujas diferenças, em módulo, das distâncias PF<sub>1</sub> e PF<sub>2</sub> são iguais a uma constante 2a, com 0 < 2a < 2c. |PF<sub>1</sub> - PF<sub>2</sub>| = 2a</p>
+            <div><img src="IMG_20241002_105230269.jpg" alt="hipérbole1" loading="lazy"></div>
+            <div><img src="IMG_20241002_105238465.jpg" alt="hipérbole2" loading="lazy"></div>
+            <ul>
+                <li>Os pontos T, com T ∈ alfa, tais que TF<sub>1</sub> - TF<sub>2</sub> = 2a, determinam um ramo da hipérbole, e os pontos S, com S ∈ alfa, tais que SF<sub>2</sub>
+                - SF<sub>1</sub> = 2a, determinam o outro <b>ramo</b>.</li>
+                <li>Os pontos F<sub>1</sub> e F<sub>2 </sub>são os <b>focos da hipérbole.</b></li>
+                <li>A medida 2c é a <b>distância focal</b> (a distância entre os focos); c é a semidistânncia focal.</li>
+                <li>Os pontos A<sub>1</sub> e A<sub>2</sub>, intersecções da hipérbole com o segmento <em class="linha-acima">F<sub>1</sub>F<sub>2</sub></em>, são chamados de vértices da 
+                hipérbole.</li>
+                <li>O segmento <em class="linha-acima">A<sub>1</sub>A<sub>2</sub></em> é chamado de eixo real da hipérbole, e sua medida é 2a.</li>
+                <li>O ponto médio C do eixo real <em class="linha-acima">A<sub>1</sub>A<sub>2</sub></em>, que também é o ponto médio do segmento <em class="linha-acima">F<sub>1</sub>F<sub>2</sub></em>,
+                    é chamado de <b>centro da hipérbole</b>; <em class="linha-acima">A<sub>1</sub>C</em> e <em class="linha-acima">A<sub>2</sub>C</em> são os <b>semieixos</b> reais da medida a.</li>
+                <li>O segmento <em class="linha-acima">B<sub>1</sub>B<sub>2</sub></em> do plano alfa, tal que B<sub>1</sub>A<sub>1</sub> = B<sub>1</sub>A<sub>2</sub>
+                = B<sub>2</sub>A<sub>1</sub> = B<sub>2</sub>A<sub>2</sub> = c, é chamado de <b>eixo imaginário</b> da hipérbole (note que a reta <em class="linha-acima">B<sub>1</sub>B<sub>2</sub></em> é 
+                a mediatriz do eixo real). Os segmentos <em class="linha-acima">B<sub>1</sub>C</em> e <em class="linha-acima">B<sub>2</sub>C</em>, que têm medidas iguais e são indicadas por b, são 
+                os <b>semieixos imaginários</b>.</li>
+            </ul>
+                <div><img src="IMG_20241002_105302559.jpg" alt="hipérbole3" loading="lazy"></div>
+            <ul>
+                <p>Pelo teorema de Pitágoras, temos do triângulo retângulo B<sub>1</sub>CA<sub>2</sub>: c² = a² + b²</p>
+                <li>Chama-se <b>retângulo referência</b> da hipérbole o retângulo MNPQ cujos pontos médios dos lados são A<sub>1</sub>, B<sub>1</sub>, A<sub>2</sub> e B<sub>2</sub>. 
+                As retas <em class="linha-acima">MP</em> e <em class="linha-acima">NQ</em>, que contêm as diagonais do retângulo referência, são denominadas <b>assíntotas</b> da hipérbole.
+                A hipérbole não tem ponto em comum com nenhuma das assíntotas, e a distância entre a hipérbole e cada assíntota se aproxima indefinidamente de zero.</li>
+            </ul>
+                <div><img src="IMG_20241002_105314930.jpg" alt="hipérbole4" loading="lazy"></div>
+            <ul>
+                <li>O número e = c / a é chamado de <b>excentricidade</b> da hipérbole. Observando que esse número é a razão entre a hipotenusa e um cateto de um triângulo retângulo, nessa 
+                ordem, concluímos que e > 1.</li>
+            </ul>
+            <h3>Nota:</h3>
+            <ul>
+                <p>A excentricidade é um número que mede quanto a hipérbole está próxima de duas semirretas ou de duas retas paralelas.</p>
+                <li>Quanto mais próximas de 1 estiver a excentricidade, mais próxima de duas semirretas colineares de sentidos opostos estará a hipérbole.</li>
+                <li>Quanto mais próxima do infinito positivo estiver a excentricidade, mais próxima de duas retas paralelas estará a hipérbole.</li>
+            </ul>
+                <div><img src="IMG_20241002_105335107.jpg" alt="hipérbole5" loading="lazy"></div>
+                <div class="vídeo"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/9xoLazPxV6w?si=UJvJF3rWwQSA3Z7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </section>
+        <section>
+            <h2 class="sublinhado">Construção de uma hipérbole</h2>
+            <h3>Usando tábua, pregos, barbantes, régua e lápis</h3>
+            <p>Uma hipérbole pode ser facilmente desenhada com o auxílio de dois pregos, um barbante e uma haste (pode ser uma régua) da seguinte maneira:</p>
+            <ul>
+                <li>Corte um pedaço de barbante em um comprimento menor que o da haste.</li>
+                <li>Em uma das extremidades da haste, amarre uma extremidade do barbante.</li>
+                <li>Fixe a outra extremidade da haste e a outra ponta do barbante em dois pregos cravados em pontos distintos, F<sub>1</sub> e F<sub>2</sub>,
+                de uma tábua. A diferença entre o comprimento d da régua e o comprimento l do barbante deve ser menor que a distância entre F<sub>1</sub> e 
+                F<sub>2</sub>, ou seja, d - l < F<sub>1</sub>F<sub>2</sub>.</li>
+                <li>Com a ponta de um lápis, pressione o barbante contra a haste, deslizando a grafite sobre a tábua e mantendo o barbante esticado, sempre 
+                junto à haste. Dessa forma, obtemos um ramo da hipérbole.</li>
+                <li>Repita a operação, invertendo os pontos de fixação na tábua, isto é, fixe a haste em F<sub>2</sub> e o barbante em F<sub>1</sub>.
+                Assim, obtemos o outro ramo da hipérbole.</li>
+            </ul>
+            <div><img src="IMG_20241002_105351432.jpg" alt="hipérbole7" loading="lazy"></div>
+            <h3>Usando dobraduras</h3>
+            <p>Assim como fizemos no estudo da elipse, vamos construir a hipérbole por meio de dobraduras. Para isso, adotamos os procedimentos a seguir.</p>
+            <ol type="I">
+                <li>Desenhamos em uma folha de papel translúcido um ponto exterior a uma circunferência.</li>
+                <li>Dobramos a folha em torno de uma corda da circunferência, de modo que o arco dobrado passe pelo ponto.</li>
+                <li>Desdobramos a folha e fazemos outra dobra em torno de outra corda, de modo que o arco dobrado passe pelo ponto. Repetimos esse procedimento
+                    várias vezes. As retas que contêm essas cordas são tangentes a uma hipérbole. Quanto mais dobras fizermos, mais visível ficará a hipérbole.</li>
+            </ol>
+            <div><img src="IMG_20241006_145941624.jpg" alt="hipérbole6" loading="lazy"> <img src="IMG_20241006_150113534.jpg" alt="hipérbole6.5" loading="lazy"> <img src="IMG_20241006_150151066.jpg" alt="hipérbole6.9" loading="lazy"></div>
+        </section>
+        <section>
+            <h2 class="sublinhado">Equação reduzida da hipérbole</h2>
+            <p>Associando um sistema de eixos cartesianos ao plano de uma hipérbole, podemos representá-la por uma equação. Como introdução, estudaremos apenas o caso
+                em que os eixos da hipérbole são, respectivamente, paralelos aos eixos coordenados do sistema cartesiano. Por exemplo, consideremos a hipérbole 
+                de focos F<sub>1</sub>(0, 3) e F<sub>2</sub>(0, -3), cujo eixo real mede 2 unidades.</p>
+            <div><img src="IMG_20241007_175037392.jpg" alt="hipérbole8" loading="lazy"></div>
+            <p>Uma equação dessa hipérbole é obtida tomando-se um ponto genérico P(x, y) e impondo que |PF<sub>1</sub> - PF<sub>2</sub>| = 2, ou seja:</p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">|√<em class="linha-acima">(x - 0)² + (y - 3)²</em> - √<em class="linha-acima">(x - 0)² + [y - (-3)]²</em>| = 2 ->
+                √<em class="linha-acima">x² + (y - 3)²</em> - √<em class="linha-acima">x² + (y + 3)²</em> = ±2 -> √<em class="linha-acima">x² + (y - 3)²</em> = ±2 + √<em class="linha-acima">x² + (y + 3)²</em></p>
+            <p>Quadrando ambos os membros:</p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">(√<em class="linha-acima">x² + (y - 3)²</em>)² = (±2 + √<em class="linha-acima">x² + (y + 3)²</em>)² -> <em style="text-decoration: line-through;">x²</em> + (y - 3)² = 4 ± 4√<em class="linha-acima">x² + (y  +3)²</em> + <em style="text-decoration: line-through;">x²</em> + (y + 3)² -></p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;"><em style="text-decoration: line-through;">y²</em> - 6y + <em style="text-decoration: line-through;">9</em> = 4 ± 4√<em class="linha-acima">x² + (y + 3)²</em> + <em style="text-decoration: line-through;">y²</em> + 6y + <em style="text-decoration: line-through;">9</em> ->
+            ±4√<em class="linha-acima">x² + (y + 3)²</em> = 12y + 4 -> ±√<em class="linha-acima">x² + (y + 3)²</em> = 3y + 1</p>
+            <p>Quadrando ambos os membros, temos:</p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">(±√<em class="linha-acima">x² + (y + 3)²</em>)² = (3y + 1)² -> x² + (y + 3)² = (3y + 1)² -> x² + y² + <em style="text-decoration: line-through;">6y</em> + 9 = 9y² + <em style="text-decoration: line-through;">6y</em> + 1 -></p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">-> 8y² - x² = 8 -> y² / 1 - x² / 8 = 1</p>
+            <p>Essa última equação é chamada de <b>equação reduzida da hipérbole.</b></p>
+            <h3>Generalizando</h3>
+            <p>Reproduzindo os procedimentos apresentados nesse exemplo para uma hipérbole qualquer de centro C(x<sub>0</sub>, y<sub>0</sub>), com eixo real de medida 
+            2a e eixo imaginário de medida 2b, concluímos que:</p>
+            <ul>
+                <li>Se essa hipérbole tem o eixo real paralelo ao eixo das abscissas, sua equação pode ser apresentada na forma:</li>
+                <p>(x - x<sub>0</sub>)² / a² - (y - y<sub>0</sub>)² / b² = 1</p>
+            </ul>
+            <div><img src="IMG_20241007_175105502~2.jpg" alt="hipérbole9" loading="lazy"></div>
+            <ul>
+                <li>Se essa hipérbole tem o eixo real paralelo ao eixo das ordenadas, sua equação pode ser apresentada na forma:</li>
+                <p>(y - y<sub>0</sub>)² / b² - (x - x<sub>0</sub>)² / a² = 1</p>
+            </ul>
+            <div><img src="IMG_20241007_175105502.jpg" alt="hipérbole10" loading="lazy"></div>
+                <p>Essas duas equações são denominadas <b>equações reduzidas das hipérboles.</b></p>
+        </section>
+        <section>
+            <h2>4-Parábola</h2>
+            <p>A parábola é estudada normalmente no 1º ano do Ensino Médio como gráfico da função polinomial do 2º grau. Uma aplicação prática observada pelo cirurgião-dentista 
+                estadunidense Edward Hartley Angle (1855-1930), conhecido internacionalmente como o mentor  da Ortodontia moderna, descreveu como forma ideal
+                do arco dentário a forma de uma <b>parábola</b>. Posteriormente, outros grandes nomes  da ortodontia, como Emil Herbst, adotaram também essa forma como
+                ideal.</p>
+            <div><img src="IMG_20241010_191035437.jpg" alt="dentes"></div>
+            <p>A parábola pode ser definida como a intersecção de uma superfície cônica ilimitada com um plano paralelo a uma geratriz dessa superficíce, como vimos
+                anteriormente. Porém, para o estudo analítico dessa cônica, é mais adequado denifini-la a partir de uma propriedade comum a todos os seus pontos, como é 
+                feito a seguir</p>
+                <p>Dados um ponto F e uma reta r de um plano, com F ∉ r, chama-se <b>parábola</b> o conjunto dos pontos P desse plano equidistantes de r e F (Pr = PF).</p>
+                <div><img src="IMG_20241007_175244175~2.jpg" alt="parábola1"></div>
+                <ul>
+                    <li>O ponto F e a reta r são o <b>foco</b> e a <b>diretriz</b> da parábola, respectivamente.</li>
+                    <li>A reta e que passa por F e é perpendicular à diretriz é o <b>eixo de simetria</b> da parábola.</li>
+                    <li>O ponto V, intersecção da parábola com eixo e, é o <b>vértice</b> da parábola.</li>
+                </ul>
+                <div><img src="IMG_20241007_175244175~3.jpg" alt="parábola2"></div>
+                <ul>
+                    <li>A distância p do foco à diretriz é chamada de <b>parâmetro</b> da parábola.</li>
+                </ul>
+                <div><img src="IMG_20241007_175244175.jpg" alt="parábola3"></div>
+                <p>Note que a distância entre o vértice V e o foco F é metade do parâmetro, pois V pertence à parábola; portanto, V equidista de F e r. Assim, temos:</p>
+                <p>{VF = Vr       } <em>-></em>VF = p / 2 e Vr = p / 2</p>
+                <p>{VF + Vr = p}</p>
+                <ul>
+                    <li>A razão entre as distâncias de um ponto P da parábola ao foco e à diretriz é chamada de <b>excentricidade</b> da parábola. Como essas distâncias são
+                    iguais, a excentricidade da parábola é igual a 1.</li>
+                    <li>Como vimos, na elipse e na hipérbole, a excentricidade determina a forma da curva. Porém, na parábola a excentricidade é constante (igual a 1) e,
+                    portanto, não determina a forma da curva. O que determina a forma da parábola é o parâmetro p, distância do foco F à diretriz r: quanto menor o
+                    parâmetro, mais "fechada" será a parábola; quanto maior o parâmetro, mais "aberta" ela será. Compare as figuras abaixo: na primeira parábola, o parâmetro
+                    é 1; na segunda, o parâmetro é 5.
+                    </li>
+                    <div><img src="IMG_20241007_175310436.jpg" alt="parábola6"> <img src="IMG_20241007_175310436~2.jpg" alt="parábola7"></div>
+                </ul>
+                <div class="vídeo"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/mCcmt5RyfNI?si=brn6SeqnRa54SnFh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+        </section>
+        <section>
+            <h2 class="sublinhado">Construção de uma parábola</h2>
+            <h3>Usando tábua, pregos, régua, esquadro, barbante e lápis</h3>
+            <ul>Você pode traçar uma parábola com auxílio de uma tábua, pregos, um pedaço de barbante, uma régua e um esquadro da seguinte maneira:
+                <li>Corte um pedaço de barbante com o mesmo comprimento do lado <i class="linha-acima">AB</i> de um esquadro ABC, retângulo em A.</li>
+                <li>Fixe, com dois pregos, a régua em uma tábua.</li>
+                <li>Amarre a extremidade do barbante no vértice B do esquadro ABC, retângulo em A.</li>
+                <li>Amarre a outra extremidade do barbante em um prego cravado em um ponto F da tábua, como mostra a foto.</li>
+                <li>Faça deslizar sobre a régua a base <i class="linha-acima">AC</i> do esquadro, pressionado o barbante contra o lado <i class="linha-acima">AB</i> com a ponta de um lápis,
+                que vai desenhar uma parte da parábola até seu vértice.</li>
+                <li>Ao passar pelo ponto F, inverta a posição do esquadro, continuando o traçado da parábola.</li>
+                <div><img src="IMG_20241007_175346200.jpg" alt="parábola7"></div>
+            </ul>
+            <p>Note que, em qualquer ponto em que estiver a ponta do lápis, ela vai equidistar da régua e do ponto F, pois o comprimento do barbante é igual à medida <i class="linha-acima">AB</i> do esquadro.
+            Assim, a reta representada pela borda da régua é a diretriz da parábola.</p>
+            <h3>Usando dobraduras</h3>
+            <ol>A parábola pode ser construída por meio de dobraduras, como já fizemos com a elipse e com a hipérbole. Para essa construção, adotamos os seguintes procedimentos:
+                <li>Desenhamos, em uma folha de papel translúcido, uma reta e um ponto que não pertence a ela.</li>
+                <li>Dobramos a folha em torno de um vinco, de modo que a semirreta dobrada passe pelo ponto.</li>
+                <li>Desdobramos a folha e fazemos outra dobra em torno de outro vinco, de modo que a semirreta dobrada passe pelo ponto. Repetimos esse procedimento várias
+                    vezes. Esses vincos serão tangentes a uma parábola; quanto mais dobras fizemos, mais visível ficará a parábola.
+                </li>
+                <div><img src="IMG_20241007_175428948~4.jpg" alt="parábola8"> <img src="IMG_20241007_175428948~3.jpg" alt="parábola9"> <img src="IMG_20241007_175428948~2.jpg" alt="parábola10"></div>
+            </ol>
+            <h2 class="sublinhado">Equação reduzida da parábola</h2>
+            <p>Associando um sistema de eixos cartesianos ao plano de uma parábola, podemos representá-la por uma equação. Como introdução, estudaremos apenas o caso em que 
+                a diretriz da parábola é paralela a um dos eixos coordenados. Por exemplo, vamos considerar a parábola de foco F(3, 5), cuja diretriz r tem equação y - 3 = 0:
+            </p>
+            <div><img src="IMG_20241007_175536562.jpg" alt="parábola11"></div>
+            <p>Uma equação dessa parábola é obtida tomando um ponto genérico p(x, y) e impondo que PF = Pr, ou seja:</p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">√<em class="linha-acima">(x - 3)² + (y - 5)²</em> = |0x + y - 3| / √<em class="linha-acima">0² + 1²</em> -> √<em class="linha-acima">(x - 3)² + (y - 5)²</em> = |y - 3|</p>
+            <p>Quadrando ambos os membros dessa igualdade, temos:</p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">(√<em class="linha-acima">(x - 3)² + (y - 5)²</em>)² = (|y - 3|)² -> (x - 3)² + (y - 5)² = (y - 3)² -> (x - 3)² + <em class="text-decoration: line-through">y²</em> - 10y + 25 = <em class="text-decoration: line-through> ">y²</em> - 6y + 9 -></p>
+            <p style="font-family: Geneva, Tahoma, sans-serif;">-> (x - 3)² = 4y - 16 -> (x - 3)2 = 4(y - 4)</p>
+            <p>Essa última equação é chamada de <b>equação reduzida da parábola.</b></p>
+            <h3>Generalizando</h3>
+            <ul>Reproduzindo os procedimentos apresentados no exemplo anterior para uma parábola qualquer de vértice V(x<sub>0</sub>, y<sub>0</sub>) e parâmetro p, concluímos que:
+                <li>Se essa parábola tem a diretriz paralela ao eixo Ox e a concavidade voltada para o sentido positivo do eixo Oy (concavidade voltada para cima), sua equação é:</li>
+                <p>(x - x<sub>0</sub>)² = 2p(y - y<sub>0</sub>)</p>
+            </ul>
+                <div><img src="IMG_20241010_191111141.jpg" alt="parábola12"></div>
+            <ul>
+                <li>Se essa parábola tem a diretiz paralela ao eixo Ox e a concavidade voltada para sentido negativo do eixo Oy (concavidade voltada para baixo), sua equação é:</li>
+                <p>(x - x<sub>0</sub>)² = -2p(y - y<sub>0</sub>)</p>
+                </ul>
+                <div><img src="IMG_20241010_191425831.jpg" alt="parábola13"></div>
+            <ul>
+                <li>Se essa parábola tem a diretriz paralela ao eixo Oy e a concavidade voltada para o sentido positivo do eixo Ox (concavidade voltada para direita), sua equação é:</li>
+                <p>(y - y<sub>0</sub>)² = 2p(x - x<sub>0</sub>)</p>
+            </ul>
+                <div><img src="IMG_20241007_175622279.jpg" alt="parábola14"></div>
+            <ul>
+                <li>Se essa parábola tem a diretriz paralela ao eixo Oy e a concavidade voltada para o sentido negativo do eixo Ox (concavidade voltada para esquerda), sua equação é:</li>
+                <p>(y - y<sub>0</sub>)² = -2p(x - x<sub>0</sub>)</p>
+            </ul>
+                <div><img src="IMG_20241007_175622279~2.jpg" alt="parábola15"></div>
+            <p>Essas quatro equações são denominadas <b>equações reduzidas das parábolas.</b></p>
+        </section>
+    </main>  
+</body>
+<footer>
+    <p style="font-family: cursive;">PAIVA, Manoel. MATEMÁTICA PAIVA: 3 Ensino Médio.</p> 
+    <p style="font-family: cursive;">3ª edição. São Paulo: MODERNA, 2015.</p>
+<footer>
+</html>
